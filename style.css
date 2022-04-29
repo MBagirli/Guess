@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #343a40;
+  width: 100%;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15%;
+}
+.header__btn {
+  display: block;
+  width: 10%;
+  height: 50px;
+  font-size: 32px;
+  border-radius: 5px;
+  margin-left: 50px;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+}
+
+.header__btn:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+  transform: translateY(-10px);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.header__p {
+  font-size: 32px;
+  color: #fff;
+  margin-right: 50px;
+}
+
+.result {
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.result__h1 {
+  color: #fff;
+  font-size: 64px;
+}
+
+.result__container {
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+
+.result__container__screen {
+  width: 12%;
+  height: 50%;
+  justify-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  font-size: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.result__container__decoration {
+  width: 100%;
+  border-top: 5px solid #fff;
+  position: absolute;
+  top: 50%;
+}
+
+.guess {
+  height: 40%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.guess__check {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.guess__check__input {
+  display: block;
+  background-color: transparent;
+  border: 2px solid #fff;
+  height: 25%;
+  width: 20%;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.guess__check__btn {
+  display: block;
+  width: 15%;
+  height: 15%;
+  font-size: 24px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.guess__check__btn:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+  transform: translateY(-10px);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.guess__checked {
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.guess__checked__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.popup {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -250px);
+  border: 1px solid #fff;
+  width: 30%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+
+.popup_show {
+  transform: translate(-50%, 0px);
+  transition: all 0.5s;
+}
+.popup__h2 {
+  color: #fff;
+  font-size: 22px;
+  padding: 3px;
+}
+
+@media (max-width: 1040px) {
+  .header__btn {
+    font-size: 24px;
+  }
+  .header__p {
+    font-size: 24px;
+  }
+  .result__h1 {
+    font-size: 54px;
+  }
+  .guess__check__btn {
+    font-size: 18px;
+  }
+}
+@media (max-width: 774px) {
+  .header__btn {
+    font-size: 20px;
+  }
+  .header__p {
+    font-size: 20px;
+  }
+  .result__h1 {
+    font-size: 50px;
+  }
+  .guess__check__btn {
+    font-size: 12px;
+  }
+  .guess__checked {
+    font-size: 16px;
+  }
+  .result__container__screen {
+    width: 16%;
+  }
+}
+@media (max-width: 566px) {
+  .header__btn {
+    font-size: 16px;
+    width: 15%;
+  }
+  .header__p {
+    font-size: 16px;
+  }
+  .result__h1 {
+    font-size: 44px;
+  }
+  .guess__check__btn {
+    font-size: 10px;
+    width: 25%;
+  }
+  .result__container__screen {
+    width: 20%;
+  }
+}
+@media (max-width: 470px) {
+  .header__btn {
+    font-size: 16px;
+  }
+  .header__p {
+    font-size: 16px;
+  }
+  .result__h1 {
+    font-size: 44px;
+  }
+  .guess__check__btn {
+    font-size: 10px;
+  }
+  .guess__check__input {
+    width: 25%;
+  }
+  .result__container__screen {
+    width: 35%;
+  }
+}
+@media (max-width: 382px) {
+  .header__btn {
+    font-size: 13px;
+    width: 20%;
+  }
+  .header__p {
+    font-size: 13px;
+  }
+  .result__h1 {
+    font-size: 40px;
+  }
+  .guess__check__btn {
+    font-size: 10px;
+    width: 30%;
+  }
+  .guess__check__input {
+    width: 35%;
+  }
+}
+@media (max-width: 340px) {
+  .result__h1 {
+    font-size: 36px;
+  }
+}

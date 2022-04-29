@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <button class="header__btn">Again!</button>
+    <p class="header__p">( Between 1 and 20 )</p>
+  </div>
+
+  <div class="result">
+    <h1 class="result__h1">Guess My Number</h1>
+    <div class="result__container">
+      <div class="result__container__screen">?</div>
+      <div class="result__container__decoration"></div>
+    </div>
+  </div>
+
+  <div class="guess">
+    <div class="guess__check">
+      <input class="guess__check__input" type="text">
+      <button class="guess__check__btn">Check!</button>
+    </div>
+    <div class="guess__checked">
+      <div class="guess__checked__container">
+        <p class="guess__checked__container__Start">Start guessing...</p>
+        <p class="guess__checked__container__score">
+          <span class="guess__checked__container__score__span">Score : </span>
+          <span class="guess__checked__container__score__span__result">20</span>
+        </p>
+        <p class="guess__checked__container__best">
+          <span class="guess__checked__container__best__span">Highscore : </span>
+          <span class="guess__checked__container__score__best__result"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup">
+    <h2 class="popup__h2"></h2>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

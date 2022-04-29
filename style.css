@@ -215,7 +215,7 @@ body {
     width: 20%;
   }
   .guess__check__input {
-    width: 100%;
+    width: 80%;
   }
 }
 @media (max-width: 470px) {
@@ -230,9 +230,6 @@ body {
   }
   .guess__check__btn {
     font-size: 10px;
-  }
-  .guess__check__input {
-    width: 25%;
   }
   .result__container__screen {
     width: 35%;
